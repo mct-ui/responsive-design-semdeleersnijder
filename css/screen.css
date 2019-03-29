@@ -4,21 +4,21 @@
 @font-face{
   font-family: "HK Grotesk Web";
   font-weight: 200;
-  src: url("../fonts/hkgrotesk-light-webfront.woff2") format("woff2"),
-       url("../fonts/hkgrotesk-light-webfront.woff") format("woff");
+  src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+       url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
 }
 @font-face{
     font-family: "HK Grotesk Web";
     font-weight: 400;
-    src: url("../fonts/hkgrotesk-regular-webfront.woff2") format("woff2"),
-         url("../fonts/hkgrotesk-regular-webfront.woff") format("woff");
+    src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
+         url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
 }
 
 @font-face{
   font-family: "HK Grotesk Web";
   font-weight: 600;
-  src: url("../fonts/hkgrotesk-medium-webfront.woff2") format("woff2"),
-       url("../fonts/hkgrotesk-medium-webfront.woff") format("woff");
+  src: url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"),
+       url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
 }
 /*------------------------------------*\
   #GENERIC
@@ -46,6 +46,12 @@ html {
     box-sizing: inherit;
 }
 
+@media (min-width: 765px){
+    html{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -76,9 +82,16 @@ img {
 
 /*
     Elements: typography
-    ---
+
     Default markup for typographic elements
 */
+h1,
+h2,
+h3{
+    font-weight: 200;
+}
+
+
 
 h1 {
     font-size: 36px;
@@ -213,7 +226,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    max-width: 56.4em; /* 90 * 16px = 1440px */
 }
 
 /*
