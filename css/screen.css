@@ -1,7 +1,25 @@
 /*------------------------------------*\
   #FONTS
 \*------------------------------------*/
+@font-face{
+  font-family: "HK Grotesk Web";
+  font-weight: 200;
+  src: url("../fonts/hkgrotesk-light-webfront.woff2") format("woff2"),
+       url("../fonts/hkgrotesk-light-webfront.woff") format("woff");
+}
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: url("../fonts/hkgrotesk-regular-webfront.woff2") format("woff2"),
+         url("../fonts/hkgrotesk-regular-webfront.woff") format("woff");
+}
 
+@font-face{
+  font-family: "HK Grotesk Web";
+  font-weight: 600;
+  src: url("../fonts/hkgrotesk-medium-webfront.woff2") format("woff2"),
+       url("../fonts/hkgrotesk-medium-webfront.woff") format("woff");
+}
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -15,8 +33,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: #111;
+    font-family: "HK Grotesk Web", Helvetica, arial, sans-serif;
+    color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,7 +54,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #5051DB;
     color: white;
     text-shadow: none;
 }
@@ -136,18 +154,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #5051DB;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #5051DB;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #3E3EA8;
 }
 
 /*------------------------------------*\
