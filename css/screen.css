@@ -226,7 +226,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 56.4em; /* 90 * 16px = 1440px */
+    max-width: 56.4em; /* 56.4 * 16px = 1128px */
 }
 
 /*
@@ -353,6 +353,25 @@ a:focus {
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
+/*
+    Component: Logo
+    ---
+    Website main logo
+*/
+
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: inherit;
+}
+
+@media (min-width: 768px) {
+    .c-logo {
+        height: 40px;
+    }
+}
 
 /*
     Utilities: max-width
